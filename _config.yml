@@ -14,3 +14,4 @@ twitter_username: CharlessMtz
 
 # Build settings
 markdown: kramdown
+permalink: /:title
