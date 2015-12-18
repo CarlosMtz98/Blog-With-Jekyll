@@ -1,3 +1,4 @@
+
 <header>
 
   <div class="header-wrapp">
@@ -7,15 +8,15 @@
     </div>
 
     <nav>
-      <ul>
-
+      <div class="navigation-bar">
+        <!-- This is the loop for addign all the pages to the nav -->
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+            <div class="navigation-items {{ my_page.url | split: "/" }}"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | upcase}}</a></div>
           {% endif %}
         {% endfor %}
 
-      </ul>
+      </div>
     </nav>
 
   </div>
