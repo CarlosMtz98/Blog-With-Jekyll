@@ -52,14 +52,17 @@ $on-laptop:        800px;
 @import '2-basics/icons';
 
 
-// 3 - Modules
+// 3 - MODULES
 @import '3-modules/example-module-name-lockup';
 @import '3-modules/example-fork-tag';
 @import '3-modules/example-flex-video';
 
 
-// 4 - sections
+// 4 - SECTIONS
 @import '4-sections/header-home';
 @import '4-sections/page-content';
 @import '4-sections/posts';
 @import '4-sections/footer';
+
+// 5 - PAGES
+@import '5-pages/cars-page';

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    {% if page.image %}
+      <div class="post-header-image" style="background-image: url(/assets/img/posts/{{page.image}});"></div>
+    {% endif %}
+
+    <div class="{{page.title | downcase}}-wrapp">
+      
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

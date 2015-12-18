@@ -1,7 +1,7 @@
 <footer class="site-footer">
 
   <div class="wrapper">
-    
+
       <div class="footer-col footer-col-2">
         {% for my_page in site.pages %}
           {% if my_page.title %}
@@ -13,11 +13,6 @@
       <div class="footer-col footer-col-1">
 
         <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
 
           {% if site.twitter_username %}
           <li>
@@ -27,8 +22,6 @@
         </ul>
 
       </div>
-
-
 
     </div>
 
