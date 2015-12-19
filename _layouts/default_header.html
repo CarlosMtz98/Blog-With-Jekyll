@@ -11,9 +11,10 @@
       <div class="post-header-image" style="background-image: url(/assets/img/posts/{{page.image}});"></div>
     {% endif %}
 
-    <div class="{{page.title | downcase}}-wrapp">
-      
-    </div>
+    <section class="{{page.title | downcase}}-wrapp">
+      <!-- Here is going to be the content of the page -->
+      {{ content }}
+    </section>
 
     {% include footer.html %}
 

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
 
     {% if page.image %}
@@ -13,12 +10,9 @@
 
     <div class="page-content">
       <div class="page-wrapp {{page.title | downcase}}">
-        {{ content }}
+        {{content}}
       </div>
     </div>
-
     {% include footer.html %}
-
   </body>
-
 </html>

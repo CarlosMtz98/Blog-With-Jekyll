@@ -4,3 +4,42 @@ title: Cars
 permalink: /Cars/
 image: acura-nsx.jpg
 ---
+
+<div class="cars-content">
+
+  <div class="page-header">
+
+    <div class="page-title">
+
+      <h2>{{ page.title }}</h2>
+
+      <div class="title-underline">
+        <span class="under-line"></span>
+        <span class="under-dot"></span>
+        <span class="under-line"></span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="cars-navigation">
+    <div class="search-menu">
+
+    </div>
+    <div class="cars-nav-elements">
+      {% for my_page in site.pages %}
+        {% if my_page.cars-page %}
+            <a class="cars-nav-items nav-item-{{my_page.cars-page | downcase }}" href="{{ my_page.url | prepend: site.baseurl }}">
+              <div class="cars-nav-bg" style="background-image: url(../assets/img/cars-page/{{my_page.nav-image}})">
+              </div>
+              <div class="nav-label">
+                <span>{{ my_page.cars-page | upcase}}</span>
+              </div>
+            </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
