@@ -1,0 +1,8 @@
+#General site settings
+
+slides:
+ - {image: porsche-gt3.jpg}
+ - {image: bmw-m4.jpg}
+ - {image: mustang-2015.jpg}
+ - {image: audi-r8.jpg}
+ - {image: ferrari-458.jpg}

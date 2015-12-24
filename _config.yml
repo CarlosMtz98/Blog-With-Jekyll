@@ -10,4 +10,4 @@ twitter_username: CharlessMtz
 markdown: kramdown
 permalink: /:title
 
-port: 8000
+port: 4000

@@ -1,0 +1,47 @@
+<!-- This is the html for the default slide var of the web blog -->
+
+<div class="slide-wrap">
+
+  <div class="slider-arrows">
+    <div class="slide-left-arrow">
+      <div></div>
+    </div>
+    <div class="slide-right-arrow">
+      <div></div>
+    </div>
+  </div>
+
+  <div class="wrap-slides">
+    {% for slide in site.data.globals.slides %}
+      <div class="slide-items" style="background-image:url(/assets/img/home-slider/{{ slide.image }});">
+
+        {% if slide.title %}
+          <h1>{{ slide.title }}</h1>
+        {% endif %}
+
+        {{ if slide.secundary-title }}
+          <h2>{{slide.secundary-title}}</h2>
+        {{ endif }}
+
+        {{ if slide.description }}
+          <p>{{slide.description}}</p>
+        {{ endif }}
+
+        {% if slide.button %}
+          <a class="button" href="{{ slide.button-link }}">{{ slide.button }}</a>
+        {% endif %}
+
+      </div>
+    {% endfor %}
+  </div>
+
+  <ul class="slider-navigation">
+    {% for slide in site.data.globals.slides %}
+    <li class="slider-nav-buttons">
+    </li>
+    {% endfor %}
+  </ul>
+
+
+
+</div>

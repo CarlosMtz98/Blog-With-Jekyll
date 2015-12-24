@@ -42,11 +42,13 @@ $on-laptop:        800px;
 @import '1-tools/bourbon/bourbon';
 @import '1-tools/normalize';
 @import '1-tools/vars';
+@import '1-tools/animate';
 
 
 // 2 - BASICS
 @import '2-basics/body-element';
 @import '2-basics/selection-colors';
+@import '2-basics/example-buttons';
 @import '2-basics/links';
 @import '2-basics/typography';
 @import '2-basics/icons';
@@ -56,6 +58,7 @@ $on-laptop:        800px;
 @import '3-modules/example-module-name-lockup';
 @import '3-modules/example-fork-tag';
 @import '3-modules/example-flex-video';
+@import '3-modules/slide-bar';
 
 
 // 4 - SECTIONS

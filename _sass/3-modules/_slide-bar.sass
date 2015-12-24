@@ -1,0 +1,72 @@
+.slide-wrap
+  width: 100%
+  height: 450px
+  background-color: #999
+  position: relative
+  overflow: hidden
+
+  .slide-items
+    width: 100%
+    height: 100%
+    background-size: cover
+    background-position: center
+    z-index: 0
+    position: absolute
+    top: 0
+    left: 0
+    transition: left .3s ease-in-out
+
+  .selected-slide
+    z-index: 1
+
+
+  .slider-arrows
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+    .slide-left-arrow,
+    .slide-right-arrow
+      width: 50px
+      height: 50px
+      cursor: pointer
+      z-index: 10
+
+    .slide-left-arrow
+      background-image: url("../img/icons/left-arrow.svg")
+      background-repeat: no-repeat
+
+    .slide-right-arrow
+      background-image: url("../img/icons/right-arrow.svg")
+      background-repeat: no-repeat
+
+  .slider-navigation
+    position: absolute
+    display: block
+    list-style: none
+    bottom: 0
+    left: 50%
+    padding: 0
+    margin: 0
+    z-index: 10
+
+    .slider-nav-buttons
+      width: 12px
+      height: 12px
+      position: relative
+      left: -50%
+      display: inline-block
+      margin: 0 2px 5px
+      padding: 0
+      background: transparent
+      border: 3px solid white
+      border-radius: 50%
+      cursor: pointer
+      transition: background .3s ease-in-out
+
+    .selected-button
+      background: white
