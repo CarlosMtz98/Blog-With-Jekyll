@@ -55,80 +55,86 @@
     flex-wrap: wrap
     color: white
     overflow: hidden
+    position: relative
 
-  .search-icon
-    width: 30px
-    height: 30px
-    margin-left: 30px
-    margin-top: 8px
-    margin-bottom: 8px
-    display: block
-    background-image: url("../img/icons/search.svg")
-    background-repeat: no-repeat
+    .form-first-section
+      margin-left: 50px
 
-    path.search-icon
-      fill: white
+    .search-icon
+      position: absolute
+      top: 12px
+      width: 30px
+      height: 30px
+      background-image: url("../img/icons/search.svg")
+      background-repeat: no-repeat
 
-  label
-    font-size: 14px
-    text-transform: uppercase
-    font-weight: bold
-    text-align: center
-    line-height: 1.3
+    label
+      margin-right: 5px
+      font-size: 14px
+      text-transform: uppercase
+      font-weight: bold
+      text-align: center
+      line-height: 1.3
+      clear: both
 
-  input
-    margin: 0
-    height: 50%
-    flex-basis: 200px
-    display: block
-    background-color: transparent
-    border-left: none
-    border-right: none
-    border-top: none
-    padding-left: 5px
-    text-transform: uppercase
-    font-weight: normal
+    .search-by-name-label
+      margin-left: 50px
 
-    &:focus
-      outline: 0
-
-  select
-    border: none
-    display: block
-    border-radius: 0
-    padding: 5px 0 2px 5px
-    background-size: 35px 35px
-    color: #5f6469
-    font-size: 12px
-    font-weight: 700
-    -moz-appearance: none
-    -webkit-appearance: none
-    -ms-appearance: none
-    -o-appearance: none
-    appearance: none
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
-    -ms-box-sizing: border-box
-    -o-box-sizing: border-box
-    box-sizing: border-box
-
-    &:focus
-      outline: none
-      text-transform: capitalize
-
-  #nav-submit-button
-    align-self:stretch
-    justify-content: flex-end
-    background-color: $secundary-color
-    color: white
-    font-size: 14px
-    border: none
-    border-radius: 0
-    height: 100%
-    margin-left: 10px
+    input
+      width: 160px
+      text-transform: uppercase
+      font-weight: normal
+      border: none
+      border-radius: 0
+      padding: 5px 4px 5px
+      color: #5f6469
+      font-size: 12px
+      font-weight: 700
+      border-left: 5px solid $secundary-color
 
 
+      &:focus
+        outline: 0
 
+    select
+      min-width: 130px
+      border: none
+      border-radius: 0
+      padding: 5px 0 2px 5px
+      background-image: url("/assets/img/icons/arrow-down.svg")
+      background-size: 10px 10px
+      background-repeat: no-repeat
+      background-position: 90% 55%
+      color: #5f6469
+      font-size: 12px
+      font-weight: 700
+      -moz-appearance: none
+      -webkit-appearance: none
+      -ms-appearance: none
+      -o-appearance: none
+      appearance: none
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      -ms-box-sizing: border-box
+      -o-box-sizing: border-box
+      box-sizing: border-box
+      clear: both
+      border-left: 5px solid $secundary-color
+
+      &:focus
+        outline: none
+        text-transform: capitalize
+
+    #nav-submit-button
+      background-color: $secundary-color
+      color: white
+      font-size: 14px
+      border: none
+      border-radius: 0
+      height: 100%
+      margin-left: 20px
+      position: relative
+      right: 0
 
 
 //Navigation thumbnails selection

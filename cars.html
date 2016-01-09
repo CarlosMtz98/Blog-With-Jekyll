@@ -1,5 +1,5 @@
 ---
-layout: default_header
+layout: default
 title: Cars
 permalink: /Cars/
 image: acura-nsx.jpg
@@ -7,55 +7,45 @@ image: acura-nsx.jpg
 
 <div class="cars-content">
 
-  <div class="page-header">
-
-    <div class="page-title">
-
-      <h2>{{ page.title }}</h2>
-
-      <div class="title-underline">
-        <span class="under-line"></span>
-        <span class="under-dot"></span>
-        <span class="under-line"></span>
-      </div>
-
-    </div>
-
-  </div>
-
   <div class="cars-navigation">
       <form class="search-nav" action="index.html" method="post">
 
-        <span class="search-icon"></span>
+        <div class="form-first-section">
 
-        <label for="search-by-name">Search by Keyword: </label>
-        <input type"text" id="search-by-name" name="search_by_name">
+          <span class="search-icon"></span>
 
-        <label for="brand-options">Select a Brand:</label>
-        <select id="brand-options">
-          <option value="brand_ferrari">Ferrari</option>
-          <option value="brand_mclaren">McLaren</option>
-          <option value="brand_porsche">Porsche</option>
-          <option value="brand_mercedes">Mercedes Benz</option>
-          <option value="brand_land_rover">Land Rover</option>
-          <option value="brand_jaguar">Jaguar</option>
-          <option value="brand_bmw">BMW</option>
-          <option value="brand_ford">Ford</option>
-        </select>
+          <label class="search-by-name-label" for="search-by-name">Search by Keyword: </label>
+          <input type"text" id="search-by-name" name="search_by_name">
+        </div>
 
-        <label for="model-options">Select a Model:</label>
-        <select id="model-options">
-          <option value="f430">F430</option>
-          <option value="458_italia">458 Italia</option>
-          <option value="f12">F12</option>
-          <option value="california">California</option>
-          <option value="la_ferrari">La Ferrari</option>
-          <option value="enzo">Enzo Ferrari</option>
-          <option value="enzo_fxx">Enzo FXX</option>
-        </select>
+        <div>
+          <label for="brand-options">Select a Brand:</label>
+          <select id="brand-options">
+            <option value="brand_ferrari">Ferrari</option>
+            <option value="brand_mclaren">McLaren</option>
+            <option value="brand_porsche">Porsche</option>
+            <option value="brand_mercedes">Mercedes Benz</option>
+            <option value="brand_land_rover">Land Rover</option>
+            <option value="brand_jaguar">Jaguar</option>
+            <option value="brand_bmw">BMW</option>
+            <option value="brand_ford">Ford</option>
+          </select>
+        </div>
 
-        <button type="submit" id="nav-submit-button">Search</button>
+        <div>
+          <label for="model-options">Select a Model:</label>
+          <select id="model-options">
+            <option value="f430">F430</option>
+            <option value="458_italia">458 Italia</option>
+            <option value="f12">F12</option>
+            <option value="california">California</option>
+            <option value="la_ferrari">La Ferrari</option>
+            <option value="enzo">Enzo Ferrari</option>
+            <option value="enzo_fxx">Enzo FXX</option>
+          </select>
 
+          <button type="submit" id="nav-submit-button">Search</button>
+        </div>
       </form>
     <div class="cars-nav-elements">
       {% for my_page in site.pages %}

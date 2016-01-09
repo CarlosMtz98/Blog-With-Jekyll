@@ -4,21 +4,32 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Recent Car Reviews</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        <div class="recent-posts">
 
-        <div class="post__meta">
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <span class="post__author">{{ post.author }}</span>
+          <div class="post-thumbnail">
+            <span></span>
+            <div style="background-image: url(/assets/img/posts/{{ post.image }} )"></div>
+          </div>
+
+          <h2 class="post-link">
+            {{ post.title }}
+          </h2>
+
+          <div class="post__meta">
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class="post__author">{{ post.author }}</span>
+          </div>
+
+          <a class="button" href="{{post.url | prepend: site.baseurl}}">Read More</a>
+
         </div>
 
-        <a class="btn--default" href="{{post.url | prepend: site.baseurl}}">Read More</a>
+
 
       </li>
     {% endfor %}

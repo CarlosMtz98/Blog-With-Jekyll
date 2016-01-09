@@ -1,26 +1,23 @@
-//Posts styles 
+//Posts styles
 
-.post-header
-  margin-bottom: $spacing-unit
+article
+  width: 100%
+  margin-top: 50px
 
-.post-title
-  font-size: 42px
-  letter-spacing: -1px
-  line-height: 1
-  +media-query($on-laptop)
-    font-size: 36px
+  .post-header
+    max-width: 1080px
+    margin: 0 auto
+    margin-left: 5%
 
-.post-content
-  margin-bottom: $spacing-unit
-  h2
-    font-size: 32px
-    +media-query($on-laptop)
-      font-size: 28px
-  h3
-    font-size: 26px
-    +media-query($on-laptop)
-      font-size: 22px
-  h4
-    font-size: 20px
-    +media-query($on-laptop)
-      font-size: 18px
+    .post-title
+      font-size: 42px
+      letter-spacing: -1px
+      line-height: 1
+      margin: 0
+
+  .post-content
+    max-width: 960px
+    position: relative
+    margin: 0 auto
+    padding-left: 5%
+    padding-right: 5%
