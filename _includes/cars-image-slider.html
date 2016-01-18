@@ -1,0 +1,24 @@
+<div class="post-image-slider">
+  {% for slides in page.slide %}
+
+    <div class="slide-items" style="background-image:url(/assets/img/home-slider/{{ slide.image }});">
+
+      {% if slides.title %}
+        <h1>{{ slide.title }}</h1>
+      {% endif %}
+
+      {{ if slides.secundary-title }}
+        <h2>{{slide.secundary-title}}</h2>
+      {{ endif }}
+
+      {{ if slides.description }}
+        <p>{{slide.description}}</p>
+      {{ endif }}
+
+      {% if slides.button %}
+        <a class="button" href="{{ slide.button-link }}">{{ slide.button }}</a>
+      {% endif %}
+
+    </div>
+  {% endfor %}
+</div>

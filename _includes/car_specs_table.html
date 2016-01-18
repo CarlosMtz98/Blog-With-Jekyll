@@ -1,7 +1,75 @@
 <div class="cars-specs-table">
-  <% for spec in site.posts.supecs %>
-    <div class="">
-      Hello World
-    </div>
-  <% forend %>
+  {% for specs in page.specs %}
+    {% if specs.engine %}
+      <div class="specs-table-item" >
+        <div class="specs-engine"></div>
+        <h3>Engine</h3>
+        <p>{{ specs.engine }}</p>
+      </div>
+    {% endif %}
+    {% if specs.horsepower %}
+      <div class="specs-table-item">
+        <div class="specs-horsepower"></div>
+        <h3>Hp</h3>
+        <p>{{ specs.horsepower }}</p>
+      </div>
+    {% endif %}
+    {% if specs.acceleration %}
+      <div class="specs-table-item">
+        <div class="specs-acceleration"></div>
+        <h3>100 Km/h</h3>
+        <p>{{ specs.acceleration }}</p>
+      </div>
+    {% endif %}
+    {% if specs.top-speed %}
+      <div class="specs-table-item">
+        <div class="specs-top-speed"></div>
+        <h3>Top Speed</h3>
+        <p>{{ specs.top-speed }}</p>
+      </div>
+    {% endif %}
+    {% if specs.price %}
+      <div class="specs-table-item">
+        <div class="specs-price"></div>
+        <h3>Price</h3>
+        <p>{{ specs.price }}</p>
+      </div>
+    {% endif %}
+    {% if specs.transmission %}
+      <div class="specs-table-item">
+        <div class="specs-transmission"></div>
+        <h3>Transmission</h3>
+        <p>{{ specs.transmission }}</p>
+      </div>
+    {% endif %}
+    {% if specs.revolutions %}
+      <div class="specs-table-item">
+        <div class="specs-revolutions"></div>
+        <h3>RPM</h3>
+        <p>{{ specs.revolutions }}</p>
+      </div>
+    {% endif %}
+    {% if specs.torque %}
+      <div class="specs-table-item">
+        <div class="specs-torque"></div>
+        <h3>Torque</h3>
+        <p>{{ specs.torque }}</p>
+        </div>
+    {% endif %}
+    {% if specs.weight %}
+      <div class="specs-table-item">
+        <div class="specs-weight "></div>
+        <h3>Weight</h3>
+        <p>{{ specs.weight }}</p>
+      </div>
+    {% endif %}
+    {% if specs.release %}
+      <div class="specs-table-item">
+        <div class="specs-release"></div>
+        <h3>Release Year</h3>
+        <p>{{ specs.release }}</p>
+      </div>
+    {% endif %}
+
+  {% endfor %}
 </div>

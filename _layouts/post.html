@@ -9,7 +9,13 @@ layout: default
   </div>
 
   <div class="post-content" itemprop="articleBody">
-    {{ content }}
+    <div class="post-content-article">
+      {{ content }}
+    </div>
+    <div class="post-content-specs">
+      {% include car_specs_table.html %}
+    </div>
+
   </div>
 
 </article>

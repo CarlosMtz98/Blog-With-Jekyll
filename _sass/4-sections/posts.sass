@@ -7,7 +7,7 @@ article
   .post-header
     max-width: 1080px
     margin: 0 auto
-    margin-left: 5%
+    padding-left: 5%
 
     .post-title
       font-size: 42px
@@ -16,8 +16,16 @@ article
       margin: 0
 
   .post-content
-    max-width: 960px
+    max-width: 1080px
     position: relative
     margin: 0 auto
-    padding-left: 5%
-    padding-right: 5%
+    display: flex
+
+    .post-content-article
+      display: inline-block
+      width: 75%
+      padding-left: 5%
+      padding-right: 5%
+
+    .post-content-specs
+      width: 25%
